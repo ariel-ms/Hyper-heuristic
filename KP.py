@@ -105,7 +105,7 @@ def kp_hyper_heuristic(feature, selector, matrix, capacity):
 
 params = [SELECTOR, MATRIX, CAPACITY]
 
-pso_instance = pso.PSO(2, 200, 100, 0.2, 0.5, 0.5, kp_hyper_heuristic, params)
+pso_instance = pso.PSO(2, 250, 100, 0.2, 0.5, 0.5, kp_hyper_heuristic, params)
 results = pso_instance.run_pso()
 print(results)
 

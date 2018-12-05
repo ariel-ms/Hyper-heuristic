@@ -29,7 +29,7 @@ class Particle:
         #     self.velocity.append(0.01 * random.random())
 
     def evaluate_function(self, cost_function, params):
-        error = cost_function(self.position, *params)
+        error = -1*cost_function(self.position, *params)
         if error < self.best_error:
             self.best_position = self.position
             self.best_error = error
@@ -78,7 +78,7 @@ class PSO():
 
         # print(best_global_position)
         # print(best_global_error)
-        return (best_global_position, best_global_error)
+        return (best_global_position, -1*best_global_error)
 
 # def main():
 #     particle = PSO(2, 3, 3, func1, 0.9, 10, 10)

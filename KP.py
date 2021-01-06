@@ -1,6 +1,8 @@
 import numpy as np
 import PSO as pso
 
+## Author - Ariel Mendez
+
 MATRIX = np.array([
     [1, 4, 40, 10],
     [2, 7, 42, 6],
